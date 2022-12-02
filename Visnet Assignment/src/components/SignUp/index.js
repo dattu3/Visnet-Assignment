@@ -23,7 +23,7 @@ class SignUp extends Component {
   onChangePassword = event => {
     this.setState({password: event.target.value})
   }
-
+//Email
   renderEmail = () => {
     const {email} = this.state
 
@@ -40,7 +40,7 @@ class SignUp extends Component {
       </>
     )
   }
-
+//Password
   renderPassword = () => {
     const {password} = this.state
 
