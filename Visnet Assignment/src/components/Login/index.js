@@ -102,7 +102,7 @@ class Login extends Component {
               I agree to the terms and conditions
             </label>
           </div>
-          <button type="submit" className="login-button">//Create Account
+          <button type="submit" className="login-button">
             Create my account
           </button>
           <p className="tag">Already have an account? Sign in</p>
