@@ -11,20 +11,20 @@ const Header = () => (
         src="https://res.cloudinary.com/dbaekmnhf/image/upload/v1669964083/visnet_ousswv.png"
       />
     </div>
-
+  //Route Items
     <ul className="nav-items-list">
       <li className="link-item">
-        <Link className="route-link" to="/">
+        <Link className="route-link" to="/">//Login
           Login
         </Link>
       </li>
       <li className="link-item">
-        <Link className="route-link" to="/signup">
+        <Link className="route-link" to="/signup">//SignUp
           SignUp
         </Link>
       </li>
       <li className="link-item">
-        <Link className="route-link" to="/reset">
+        <Link className="route-link" to="/reset">//Reset Password
           Reset Password
         </Link>
       </li>
