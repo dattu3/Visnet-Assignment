@@ -13,11 +13,9 @@ const App = () => (
       <Header />
       <div className="app-body">
         <Switch>
-            //Login
+          
           <Route exact path="/" component={Login} />
-            //SignUp
           <Route exact path="/signup" component={SignUp} />
-            //Reset
           <Route exact path="/reset" component={ResetPage} />
         </Switch>
       </div>
