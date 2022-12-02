@@ -29,7 +29,7 @@ class Login extends Component {
   onChangePassword = event => {
     this.setState({password: event.target.value})
   }
-
+//Email
   renderEmailField = () => {
     const {email} = this.state
     return (
@@ -46,22 +46,7 @@ class Login extends Component {
     )
   }
 
-  renderPasswordField = () => {
-    const {password} = this.state
-    return (
-      <>
-        <input
-          type="password"
-          id="password"
-          className="input-field"
-          value={password}
-          onChange={this.onChangePassword}
-          placeholder="Password"
-        />
-      </>
-    )
-  }
-
+//Username
   renderUsernameField = () => {
     const {username} = this.state
     return (
@@ -77,7 +62,22 @@ class Login extends Component {
       </>
     )
   }
-
+//Password
+  renderPasswordField = () => {
+    const {password} = this.state
+    return (
+      <>
+        <input
+          type="password"
+          id="password"
+          className="input-field"
+          value={password}
+          onChange={this.onChangePassword}
+          placeholder="Password"
+        />
+      </>
+    )
+  }
   render() {
     return (
       <div className="login-form-container">
@@ -102,7 +102,7 @@ class Login extends Component {
               I agree to the terms and conditions
             </label>
           </div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button">//Create Account
             Create my account
           </button>
           <p className="tag">Already have an account? Sign in</p>
