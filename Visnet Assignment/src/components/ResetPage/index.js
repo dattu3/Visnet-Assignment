@@ -16,23 +16,7 @@ class ResetPage extends Component {
     this.setState({password: event.target.value})
   }
 
-  renderConfirmPassword = () => {
-    const {confirmPassword} = this.state
-
-    return (
-      <>
-        <input
-          type="text"
-          id="ConfirmPassword"
-          placeholder="ConfirmPassword"
-          className="user-input"
-          value={confirmPassword}
-          onChange={this.onConfirmPassword}
-        />
-      </>
-    )
-  }
-
+//Password
   renderPassword = () => {
     const {password} = this.state
 
@@ -49,7 +33,23 @@ class ResetPage extends Component {
       </>
     )
   }
+//Confirm Password
+  renderConfirmPassword = () => {
+    const {confirmPassword} = this.state
 
+    return (
+      <>
+        <input
+          type="text"
+          id="ConfirmPassword"
+          placeholder="ConfirmPassword"
+          className="user-input"
+          value={confirmPassword}
+          onChange={this.onConfirmPassword}
+        />
+      </>
+    )
+  }
   render() {
     return (
       <div className="reset-app-container">
